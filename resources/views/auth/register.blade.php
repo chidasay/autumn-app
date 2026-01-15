@@ -22,21 +22,21 @@
 
         <div>
             <label for="email">メールアドレス</label>
-            <input type="email" id="email" name="email" value="{{ old('email') }}" required>
+            <input type="email" id="email" name="email" value="{{ old('email') }}" autocomplete="username" required>
         </div>
 
         <div>
             <label for="password">パスワード</label>
-            <input type="password" id="password" name="password" value="{{ old('password') }}" required>
+            <input type="password" id="password" name="password" autocomplete="new-password" required>
         </div>
 
         <div>
             <label for="password_confirmation">パスワード確認</label>
-            <input type="password" id="password_confirmation" name="password_confirmation" value="{{ old('password_confirmation') }}" required>
+            <input type="password" id="password_confirmation" name="password_confirmation" autocomplete="new-password" required>
         </div>
 
         <div>
-            <button type="submit">登録</button>
+            <button type="submit">登録する</button>
         </div>
     </form>
 
